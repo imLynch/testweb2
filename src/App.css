@@ -1,0 +1,39 @@
+.app-wrapper {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: "head head" "nav  main" "nav  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 200px 1fr;
+}
+
+.header {
+    grid-area: head;
+    background-color: green;
+}
+
+.header img {
+    width: 40px;
+    border-radius: 100px;
+    border: 2px solid powderblue;
+    box-shadow: 0 0 7px #666;
+    margin: 2px 2px 2px 15px;
+}
+
+
+.content {
+    grid-area: main;
+    background-color: #ff6d5e;
+    padding: 30px 30px 60px;
+}
+
+.content img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: skyblue;
+}
